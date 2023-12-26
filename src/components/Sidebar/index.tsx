@@ -3,19 +3,19 @@ import { Logo } from "./Logo";
 import { NavItem } from "./NavItem";
 import { UserdSpaceWidget } from "./UserdSpaceWidget";
 import { Profile } from "./Profile";
-import { InputControl, InputPrefix, InputRoot } from "../Input";
+import * as Input from "../Input";
 
 export function Sidebar() {
   return (
     <aside className='border-r border-zinc-200 py-8 px-5 flex flex-col gap-6'>
       <Logo />
 
-      <InputRoot>
-        <InputPrefix>
+      <Input.Root>
+        <Input.Prefix>
           <Search className="h-5 w-5 text-zinc-500" />
-        </InputPrefix>
-        <InputControl placeholder="Search" />
-      </InputRoot>
+        </Input.Prefix>
+        <Input.Control placeholder="Search" />
+      </Input.Root>
 
       <nav className="space-y-0.5">
         <NavItem title="Home" icon={Home} />
