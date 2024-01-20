@@ -20,7 +20,7 @@ export function SettingsTabs() {
           <TabsItem value='tab7' title='Email' isSelected={currentTab === 'tab7'} />
           <TabsItem value='tab8' title='Notifications' isSelected={currentTab === 'tab8'} />
           <TabsItem value='tab9' title='Integrations' isSelected={currentTab === 'tab9'} />
-          <TabsItem value='tab10' title='API' isSelected={currentTab === 'tab1'} />
+          <TabsItem value='tab10' title='API' isSelected={currentTab === 'tab10'} />
         </Tabs.List>
       </Tabs.Root>
     </>
