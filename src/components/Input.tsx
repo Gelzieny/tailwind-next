@@ -17,9 +17,6 @@ export function Control(props: InputControlProps) {
   )
 }
 
-
-
-
 export function Root(props: InputRootProps) {
   return (
     <div
