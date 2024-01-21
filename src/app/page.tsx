@@ -127,6 +127,17 @@ export default function Home() {
             </label>
             <div></div>
           </div>
+
+          <div className="flex items-center justify-end pt-5 gap-2">
+            <button type="button"
+              className="rounded-lg border border-zinc-300 px-4 py-2 text-sm font-semibold text-zinc-700 shadow-sm hover:bg-zinc-50"
+            >
+              Cancel
+            </button>
+            <button type="submit"
+              className="rounded-lg bg-violet-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-violet-700"
+            >Save</button>
+          </div>
         </form>
       </div >
     </>
