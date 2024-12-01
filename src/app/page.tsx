@@ -134,7 +134,6 @@ export default function Home() {
                 Share a few snippets of your work.
               </span>
             </label>
-            <div />
             <FileInput.Root>
               <FileInput.Trigger />
               <FileInput.Control multiple />
