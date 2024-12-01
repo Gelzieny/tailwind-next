@@ -13,8 +13,7 @@ export function Profile() {
           Gelzieny R. Martins
         </span>
         <span className="truncate text-sm text-zinc-500">
-          {' '}
-          gelzieny@gmail.com{' '}
+          gelzieny@gmail.com
         </span>
       </div>
       <button type="button" className="ml-auto rounded-md p-2 hover:bg-zinc-50">
