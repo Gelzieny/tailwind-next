@@ -1,35 +1,21 @@
-'use client'
-import * as SelectPrimitive from '@radix-ui/react-select'
-import { ChevronDown } from 'lucide-react'
-import type { ReactNode } from 'react'
+import { Item, type ItemProps } from './Item'
+import { Root, type RootProps } from './Root'
+import { Separator, type SeparatorProps } from './Separator'
+import { Trigger, type TriggerProps } from './Trigger'
+import { Content, type ContentProps } from './Content'
+import { ItemPrefix, type ItemPrefixProps } from './ItemPrefix'
+import { ItemText, type ItemTextProps } from './ItemText'
+import { Value, type ValueProps } from './Value'
 
-export interface SelectProps extends SelectPrimitive.SelectProps {
-  children: ReactNode
-  placeholder: string
-}
+export { Item, Root, Separator, Trigger, Content, ItemPrefix, ItemText, Value }
 
-export function Select({ children, placeholder, ...props }: SelectProps) {
-  return (
-    <SelectPrimitive.Root {...props}>
-      <SelectPrimitive.Trigger className="flex h-11 w-full items-center justify-between gap-2 rounded-lg border border-zinc-300 px-3 py-2 shadow-sm outline-none focus:border-violet-300 focus:ring-4 focus:ring-violet-100 data-[placeholder]:text-zinc-600">
-        <SelectPrimitive.Value
-          placeholder={placeholder}
-          className="text-black"
-        />
-        <SelectPrimitive.Icon>
-          <ChevronDown className="h-5 w-5 text-zinc-500" />
-        </SelectPrimitive.Icon>
-      </SelectPrimitive.Trigger>
-      <SelectPrimitive.Portal>
-        <SelectPrimitive.Content
-          side="bottom"
-          position="popper"
-          sideOffset={8}
-          className="z-10 w-[--radix-select-trigger-width] animate-slideDownAndFade overflow-hidden rounded-lg border border-zinc-200 bg-white shadow-sm"
-        >
-          <SelectPrimitive.Viewport>{children}</SelectPrimitive.Viewport>
-        </SelectPrimitive.Content>
-      </SelectPrimitive.Portal>
-    </SelectPrimitive.Root>
-  )
+export type {
+  ItemProps,
+  RootProps,
+  SeparatorProps,
+  TriggerProps,
+  ContentProps,
+  ItemPrefixProps,
+  ItemTextProps,
+  ValueProps,
 }
